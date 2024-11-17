@@ -16,7 +16,7 @@ function App() {
 
         <picture>
           <source srcSet={DividerDesktop} media="(min-width: 572px)" />
-          <img src={DividerMobile} alt="MDN" />
+          <img src={DividerMobile} alt="divider element" />
         </picture>
       </div>
       <button className="advice__button">
