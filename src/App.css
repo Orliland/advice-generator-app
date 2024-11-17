@@ -33,7 +33,8 @@ body {
   color: var(--light-cyan);
 }
 
-.advice__button {
+.advice__button,
+.spin {
   display: grid;
   place-items: center;
 
@@ -51,6 +52,27 @@ body {
 .advice__button:hover {
   cursor: pointer;
   box-shadow: 0 0 4rem 0 var(--neon-green);
+}
+
+.spin {
+  transform: rotate(360);
+  transition: transform 1s;
+}
+
+.spin {
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media (min-width: 572px) {
