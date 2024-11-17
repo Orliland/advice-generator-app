@@ -9,16 +9,38 @@
   --neon-green: #53ffaa;
 }
 
+/* TODO: add heading for mobile */
+
 .heading {
-  font-size: 1.3;
+  margin: 0;
+
+  font-size: 1.1rem;
   font-weight: 800;
-  line-height: 1.78rem;
-  letter-spacing: 0.409rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.346rem;
 }
 
+/* TODO: add quote for mobile */
+
 .quote {
-  font-size: 2.8rem;
+  margin: 0;
+
+  font-size: 2.4rem;
   font-weight: 800;
-  line-height: 3.82rem;
-  letter-spacing: -0.03rem;
+  line-height: 3.3rem;
+  letter-spacing: -0.026rem;
+}
+
+@media (min-width: 572px) {
+  .heading {
+    font-size: 1.3rem;
+    line-height: 1.78rem;
+    letter-spacing: 0.409rem;
+  }
+
+  .quote {
+    font-size: 2.8rem;
+    line-height: 3.82rem;
+    letter-spacing: -0.03rem;
+  }
 }
